@@ -11,7 +11,7 @@
 #include "HTTPSRedirect.h"
 
 // Enter network credentials:
-const char* ssid     = "netwowrk";
+const char* ssid     = "network";
 const char* password = "password";
 
 // Enter Google Script ID:
@@ -29,6 +29,10 @@ String url = String("/macros/s/") + GScriptId + "/exec?cal";
 
 HTTPSRedirect* client = nullptr;
 
+// Declare variables that will be published to Google Sheets
+int value0 = 0;
+int value1 = 0;
+int value2 = 0;
 
 void setup() {
 
@@ -88,10 +92,10 @@ void setup() {
 
 void loop() {
 
-// create some random numbers to publish
-int value0 = random(0,10);
-int value1 = random(0,1000);
-int value2 = random(0,100000);
+// create some fake data to publish
+value0 ++;
+value1 = random(0,1000);
+value2 = random(0,100000);
 
 
 static bool flag = false;
