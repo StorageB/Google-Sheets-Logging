@@ -6,7 +6,7 @@
 
 1. Create new Google Sheets document, and give it a name.
 
-2. Type the following header text into each of the following cells:
+2. Type the following text into each of the following cells:
 
    - Cell A1: `Date`
    - Cell B1: `Time`
@@ -42,7 +42,7 @@
 
    - Select your account
    - Select `Advanced`
-   - Select `Go to your-project-name (unsafe)` 
+   - Select `Go to your-project-name` 
    - Click `Allow`
 
 9.  Get the Script ID from the web app URL (this is not the same as the website URL)
@@ -55,7 +55,7 @@
    
    zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
 
-10. From the script editor, go to `Run > Run function > doPost`.
+10. From the script editor, go to `Run > Run function > doPost` (nothing will happen, but it is necessary to run this function manually one time)
 
 11. Click the `Save` icon.
 
@@ -71,7 +71,7 @@
     - Add password
     - Replace the Google Script ID with the ID obtained in step 9 above.
 
-3. Install the HTTPSRedirect library from here
+3. Install the HTTPSRedirect library from here:
 
     https://github.com/electronicsguy/ESP8266
 
@@ -83,5 +83,5 @@
 
 #### Notes
 
-1. When editing the Google Scripts code, you will need to `Publish > Deploy as a web app` for the changes to take effect. Make sure to change the Project Version to `New` each time. 
+1. When modifying the Google Scripts code, you will need to `Publish > Deploy as a web app` for any new changes to take effect. Make sure to change the Project Version to `New` each time. 
 
