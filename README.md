@@ -1,6 +1,6 @@
 # Log data from an ESP8266 to Google Sheets
 
-###### These are step by step instructions to begin logging data using an ESP8266 module. This will publish random number values, so no additional hardware or sensors are required for the script to run. These instructions assume you are familiar with the Arduino IDE and how to upload code to your ESP8266 and install libraries.
+###### Below are step by step instructions to begin logging data using an ESP8266 module. This will publish random number values, so no additional hardware or sensors are required for the script to run. These instructions assume you are familiar with the Arduino IDE and how to upload code to your ESP8266 and install libraries.
 
 #### Instructions for Google Sheets
 
@@ -46,11 +46,9 @@
 9.  Get the Script ID from the web app URL (this is not the same as the website URL)
 
    For example, if the URL is 
-
    https://script.google.com/macros/s/zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq/exec
 
    Then the Script ID is 
-
    zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
 
 10. From the script editor, go to `Run > Run function > doPost`.
