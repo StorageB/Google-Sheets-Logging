@@ -16,13 +16,13 @@
    
 3. Get the Spreadsheet ID from the URL.
 
-   For example, if the URL is:
+      For example, if the URL is:
    
-   https://docs.google.com/spreadsheets/d/3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4/edit#gid=0
+      https://docs.google.com/spreadsheets/d/3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4/edit#gid=0
 
-   Then the Spreadsheet ID is:
+      Then the Spreadsheet ID is:
    
-   3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4
+      3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
 
@@ -47,13 +47,13 @@
 
 9.  Get the Script ID from the web app URL (this is not the same as the website URL)
 
-   For example, if the URL is:
+       For example, if the URL is:
    
-   https://script.google.com/macros/s/zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq/exec
+       https://script.google.com/macros/s/zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq/exec
 
-   Then the Script ID is:
+       Then the Script ID is:
    
-   zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
+       zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
 
 10. From the script editor, go to `Run > Run function > doPost` (nothing will happen, but it is necessary to run this function manually one time)
 
