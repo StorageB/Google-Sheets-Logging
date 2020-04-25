@@ -45,7 +45,10 @@ function doPost(e) {
       
       case "insert_row":
          
-         sheet.insertRows(2); // insert row above row 2 (directly below header data)
+         sheet.insertRows(2); // insert row directly below header text
+         
+         //var range = sheet.getRange("A2:D2");              // use this to insert cells just above the data instead of inserting an entire row instead of inserting an entire row
+         //range.insertCells(SpreadsheetApp.Dimension.ROWS); // use this to insert cells just above the data instead of inserting an entire row instead of inserting an entire row
          
          sheet.getRange('A2').setValue(date_now); // publish current date to cell A2
          sheet.getRange('B2').setValue(time_now); // publish current time to cell B2
