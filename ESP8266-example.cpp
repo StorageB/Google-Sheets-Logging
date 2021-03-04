@@ -15,7 +15,7 @@
 const char* ssid     = "network";
 const char* password = "password";
 
-// Enter Google Script ID:
+// Enter Google Script Deployment ID:
 const char *GScriptId = "zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq";
 
 // Enter command (insert_row or append_row) and your Google Sheets sheet name (default is Sheet1):
