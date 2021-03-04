@@ -30,13 +30,13 @@
 
 6. Update the Spreadsheet ID with the ID obtained in step 3.
 
-7. Go to `Publish > Deploy as web app`.
+7. Go to `Publish > Deploy as web app` (for Google's new Script Editor interface, click the blue `Deploy` button and select `New Deployment > Select Type > Web App').
 
-   - Enter a Project Name 
-   - Project Version: `New`  
+   - Enter a Project Name (or Description)
+   - Project Version (if asked): `New`  
    - Execute the app as: `Me`
-   - Who has access to the app: `Anyone, even anonymous`
-   - Click `Deploy`
+   - Who has access to the app: `Anyone, even anonymous` or `Anyone`
+   - Click `Deploy` 
 
 8. Click `Review Permissions` if asked for authorization. 
 
@@ -45,19 +45,19 @@
    - Select `Go to your-project-name` 
    - Click `Allow`
 
-9.  Get the Script ID from the web app URL (this is not the same as the website URL)
+9.  Get the script Deployment ID from the Web App URL (this is not the same as the website URL).
 
-       For example, if the URL is:
+       For example, if the Web App URL is:
    
        https://script.google.com/macros/s/zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq/exec
 
-       Then the Script ID is:
+       Then the script Deployment ID is:
    
        zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
 
-10. From the script editor, go to `Run > Run function > doPost` (nothing will happen, but it is necessary to run this function manually one time)
+10. From the script editor, go to `Run > Run function > doPost` (for Google's new Script Editor interface, save the project, select `doPost` from the dropdown menu). Note that nothing will happen, but it is necessary to run this function manually one time.
 
-11. Click the `Save` icon.
+11. Click the `Save` icon. If asked, refer to Step 8 above to allow permissions.
 
     
 
@@ -67,9 +67,9 @@
 
 2. Update the following info:
 
-    - Add network name
-    - Add password
-    - Replace the Google Script ID with the ID obtained in step 9 above.
+    - Add your Wifi network name
+    - Add your Wifi password
+    - Replace the Google Script Deployment ID with the ID obtained in step 9 above.
 
 3. Install the HTTPSRedirect library from here:
 
