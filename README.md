@@ -45,7 +45,7 @@
    - Select `Go to your-project-name` 
    - Click `Allow`
 
-9.  Get the script Deployment ID from the Web App URL (this is NOT the same as the website URL, and this is NOT the same as the Script ID listed under Project Settings > Script ID).
+9.  Get the script Deployment ID from the Web App URL (Note that this is NOT the same as the website URL, and this is NOT the same as the Script ID listed under Project Settings > Script ID. The the Web App URL and associated Deployment ID will be dispalyed after deploying the new Web App).
 
        For example, if the Web App URL is:
    
