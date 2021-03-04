@@ -30,7 +30,7 @@
 
 6. Update the Spreadsheet ID with the ID obtained in step 3.
 
-7. Go to `Publish > Deploy as web app` (for Google's new Script Editor interface, click the blue `Deploy` button and select `New Deployment > Select Type > Web App').
+7. Go to `Publish > Deploy as web app` (for Google's new Script Editor interface, click the blue `Deploy` button and select `New Deployment > Select Type > Web App`).
 
    - Enter a Project Name (or Description)
    - Project Version (if asked): `New`  
@@ -45,7 +45,7 @@
    - Select `Go to your-project-name` 
    - Click `Allow`
 
-9.  Get the script Deployment ID from the Web App URL (this is not the same as the website URL).
+9.  Get the script Deployment ID from the Web App URL (this is NOT the same as the website URL, and this is NOT the same as the Script ID listed under Project Settings > Script ID).
 
        For example, if the Web App URL is:
    
