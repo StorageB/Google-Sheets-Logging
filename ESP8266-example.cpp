@@ -22,12 +22,11 @@ const char *GScriptId = "zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXa
 String payload_base =  "{\"command\": \"insert_row\", \"sheet_name\": \"Sheet1\", \"values\": ";
 String payload = "";
 
-
+// Google Sheets setup (do not edit)
 const char* host = "script.google.com";
 const int httpsPort = 443;
 const char* fingerprint = "";
 String url = String("/macros/s/") + GScriptId + "/exec?cal";
-
 HTTPSRedirect* client = nullptr;
 
 // Declare variables that will be published to Google Sheets
@@ -50,12 +49,10 @@ void setup() {
     delay(1000);
     Serial.print(".");
   }
-
   Serial.println('\n');
   Serial.println("Connection established!");  
   Serial.print("IP address:\t");
   Serial.println(WiFi.localIP());
-  
 
   // Use HTTPSRedirect class to create a new TLS connection
   client = new HTTPSRedirect(httpsPort);
@@ -68,9 +65,9 @@ void setup() {
 
   // Try to connect for a maximum of 5 times
   bool flag = false;
-  for (int i=0; i<5; i++){
+  for (int i=0; i<5; i++){ 
     int retval = client->connect(host, httpsPort);
-    if (retval == 1) {
+    if (retval == 1){
        flag = true;
        Serial.println("Connected");
        break;
@@ -78,16 +75,13 @@ void setup() {
     else
       Serial.println("Connection failed. Retrying...");
   }
-
   if (!flag){
     Serial.print("Could not connect to server: ");
     Serial.println(host);
     return;
   }
-
-  // delete HTTPSRedirect object
-  delete client;
-  client = nullptr;
+  delete client;    // delete HTTPSRedirect object
+  client = nullptr; // delete HTTPSRedirect object
 }
 
 
