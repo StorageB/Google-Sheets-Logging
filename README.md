@@ -84,4 +84,4 @@
 #### Notes
 
 1. When modifying the Google Scripts code, you will need to `Publish > Deploy as a web app` for any new changes to take effect. Make sure to change the Project Version to `New` each time. 
-
+2. If given a new Development ID, it may be necessary to replace the ID in the ESP8266 code with the new one given.
