@@ -13,53 +13,51 @@
    - Cell C1: `value0`
    - Cell D1: `value1`
    - Cell E1: `value2`
+   <br>
+
+   ![Selection_004](https://user-images.githubusercontent.com/44729718/115277764-46881380-a10a-11eb-9be4-b6fbe7ea7091.png)
+
    
 3. Get the Spreadsheet ID from the URL.
 
       For example, if the URL is:
    
-      https://docs.google.com/spreadsheets/d/3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4/edit#gid=0
+      https://docs.google.com/spreadsheets/d/1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo/edit#gid=0
 
       Then the Spreadsheet ID is:
    
-      3213k-okfjdk-gkeJHjd87-vdKei-lKQDIc-a2a_Hjg4
+      1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo
+      
+      ![Selection_006](https://user-images.githubusercontent.com/44729718/115282842-4854d580-a110-11eb-9ff3-e652bdd8e971.png)
+
+
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
-
-5. Delete the default text in the script editor, and paste the GoogleScripts-example.gs code.
-
-6. Update the Spreadsheet ID with the ID obtained in step 3.
-
-7. Go to `Publish > Deploy as web app` (for Google's new Script Editor interface, click the blue `Deploy` button and select `New Deployment > Select Type > Web App`).
-
-   - Enter a Project Name (or Description)
-   - Project Version (if asked): `New`  
-   - Execute the app as: `Me`
-   - Who has access to the app: `Anyone, even anonymous` or `Anyone`
-   - Click `Deploy` 
-
-8. Click `Review Permissions` if asked for authorization. 
-
-   - Select your account
-   - Select `Advanced`
-   - Select `Go to your-project-name` 
-   - Click `Allow`
-
-9.  Get the script Deployment ID from the Web App URL (Note that this is NOT the same as the website URL, and this is NOT the same as the Script ID listed under Project Settings > Script ID. The the Web App URL and associated Deployment ID will be dispalyed after deploying the new Web App).
-
-       For example, if the Web App URL is:
    
-       https://script.google.com/macros/s/zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq/exec
+   Note: Make sure you are using the new Apps Script editor (not the legacy verion). If you are using the legacy version, you will be prompted to use the new version or there will be a blue button that says "Use new editor" at the top of the page.
 
-       Then the script Deployment ID is:
+5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
+
+6. Update the Spreadsheet ID (line 11) with the ID obtained in step 3, and click `Save`.
+
+7. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
+ 
+   Click the `gear` icon next to Select Type, and select  `Web App` and modify the following:
+
+   - Enter a Description (optional)
+   - Execute as: `Me`
+   - Who has access: `Anyone` (note do not select `Anyone with a Google Account`)
    
-       zDcGefuxEz5jG3RYq8sT4Sqq3aZ9MRKLgsqr9ejHkApmjQAkqAvxQXaq
+   Click `Deploy` 
+8. Click `Authorize access`
 
-10. From the script editor, go to `Run > Run function > doPost` (for Google's new Script Editor interface, save the project, select `doPost` from the dropdown menu). Note that nothing will happen, but it is necessary to run this function manually one time.
+- select your Google account
+- on the "Google hasn't verified this app" screen, select `Advanced > Go to project (unsafe) > Allow`
+- copy the Deployment ID for use in the ESP8266 code, and click `Done`.
 
-11. Click the `Save` icon. If asked, refer to Step 8 above to allow permissions.
+9. From the script editor, click the `Save` icon, then click `Run` (note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time). 
 
-    
+   
 
 #### Instructions for ESP8266
 
