@@ -69,7 +69,7 @@
 
     - Add your Wifi network name
     - Add your Wifi password
-    - Replace the Google Script Deployment ID with the ID obtained in step 9 above (note that the ID must be contained in quotation marks as shown in the example code).
+    - Replace the Google Script Deployment ID with the ID obtained in step 8 above (note that the ID must be contained in quotation marks as shown in the example code).
 
 3. Install the HTTPSRedirect library from here:
 
