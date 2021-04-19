@@ -33,28 +33,30 @@
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
    
-   Note: Make sure you are using the new Apps Script editor (not the legacy verion). If you are using the legacy version, you will be prompted to use the new version or there will be a blue button that says "Use new editor" at the top of the page.
+   Note: Make sure you are using the new Apps Script editor (not the legacy verion). The editor should default to the new version, but if you are using the legacy version you will need switch back by clicking the blue button at the top of the page that says "Use new editor".
 
 5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
 
 6. Update the Spreadsheet ID (line 11) with the ID obtained in step 3, and click `Save`.
 
+   Note: the Spreadsheet ID must be contained in single quotation marks as shown in the example code, and the script must be saved at this point before continuing. 
+   
 7. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
  
    Click the `gear` icon next to Select Type, and select  `Web App` and modify the following:
 
    - Enter a Description (optional)
    - Execute as: `Me`
-   - Who has access: `Anyone` (note do not select `Anyone with a Google Account`)
+   - Who has access: `Anyone` (note: do not select `Anyone with a Google Account` - you must scroll down to the bottom to find `Anyone`)
    
    Click `Deploy` 
 8. Click `Authorize access`
 
 - select your Google account
-- on the "Google hasn't verified this app" screen, select `Advanced > Go to project (unsafe) > Allow`
-- copy the Deployment ID for use in the ESP8266 code, and click `Done`.
+- on the "Google hasn't verified this app" screen, select `Advanced` > `Go to project (unsafe)` > `Allow`
+- copy and save the Deployment ID for use in the ESP8266 code, and click `Done`.
 
-9. From the script editor, click the `Save` icon, then click `Run` (note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time). 
+9. From the script editor, click `Run` (note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time). 
 
    
 
@@ -66,7 +68,7 @@
 
     - Add your Wifi network name
     - Add your Wifi password
-    - Replace the Google Script Deployment ID with the ID obtained in step 9 above.
+    - Replace the Google Script Deployment ID with the ID obtained in step 9 above (note that ID must be contained in quotation marks as shown in the example code).
 
 3. Install the HTTPSRedirect library from here:
 
