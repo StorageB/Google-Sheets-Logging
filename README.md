@@ -47,7 +47,7 @@
 
    - Enter a Description (optional)
    - Execute as: `Me`
-   - Who has access: `Anyone` (*note: do not select `Anyone with a Google Account` - you must scroll down to the bottom to find `Anyone`*)
+   - Who has access: `Anyone` *(note: do not select `Anyone with a Google Account` - you must scroll down to the bottom to find `Anyone`)*
    
    Click `Deploy` 
    
@@ -57,7 +57,7 @@
 - on the "Google hasn't verified this app" screen, select `Advanced` > `Go to project (unsafe)` > `Allow`
 - copy and save the Deployment ID for use in the ESP8266 code, and click `Done`.
 
-9. From the script editor, click `Run` (note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time). 
+9. From the script editor, click `Run` *(note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time).* 
 
    
 
@@ -69,7 +69,9 @@
 
     - Add your Wifi network name
     - Add your Wifi password
-    - Replace the Google Script Deployment ID with the ID obtained in step 8 above (note that the ID must be contained in quotation marks as shown in the example code).
+    - Replace the Google Script Deployment ID with the ID obtained in step 8 above
+    
+    *Note:  The Deployment ID must be contained in quotation marks as shown in the example code. The Deployment ID can also be found by clicking `Deploy > Manage Deployments`.*
 
 3. Install the HTTPSRedirect library from here:
 
