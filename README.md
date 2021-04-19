@@ -33,13 +33,13 @@
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
    
-   Note: Make sure you are using the new Apps Script editor (not the legacy verion). The editor should default to the new version, but if you are using the legacy version you will need switch back by clicking the blue button at the top of the page that says "Use new editor".
+   *Note:  Make sure you are using the new Apps Script editor (not the legacy verion). The editor should default to the new version, but if you're using the legacy version you'll need switch back by clicking the blue "Use new editor" button at the top of the page.*
 
 5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
 
 6. Update the Spreadsheet ID (line 11) with the ID obtained in step 3, and click `Save`.
 
-   Note: the Spreadsheet ID must be contained in single quotation marks as shown in the example code, and the script must be saved at this point before continuing. 
+   *Note:  The Spreadsheet ID must be contained in single quotation marks as shown in the example code, and the script must be saved at this point before continuing.*
    
 7. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
  
@@ -47,9 +47,10 @@
 
    - Enter a Description (optional)
    - Execute as: `Me`
-   - Who has access: `Anyone` (note: do not select `Anyone with a Google Account` - you must scroll down to the bottom to find `Anyone`)
+   - Who has access: `Anyone` (*note: do not select `Anyone with a Google Account` - you must scroll down to the bottom to find `Anyone`*)
    
    Click `Deploy` 
+   
 8. Click `Authorize access`
 
 - select your Google account
@@ -82,5 +83,4 @@
 
 #### Notes
 
-1. When modifying the Google Scripts code, you will need to `Publish > Deploy as a web app` for any new changes to take effect. Make sure to change the Project Version to `New` each time. 
-2. If given a new Development ID, it may be necessary to replace the ID in the ESP8266 code with the new one given.
+1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be givin a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
