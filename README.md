@@ -33,7 +33,7 @@
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
    
-   *Note:  Make sure you are using the new Apps Script editor (not the legacy verion). The editor should default to the new version, but if you're using the legacy version you'll need switch back by clicking the blue "Use new editor" button at the top of the page.*
+   *Note:  Make sure you are using the new Apps Script editor (not the legacy version). The editor should default to the new version, but if you're using the legacy version you'll need switch back by clicking the blue "Use new editor" button at the top of the page.*
 
 5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
 
@@ -83,4 +83,4 @@
 
 #### Notes
 
-1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be givin a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
+1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
