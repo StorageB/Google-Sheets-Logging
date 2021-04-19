@@ -22,11 +22,14 @@
 
       For example, if the URL is:
    
-      https://docs.google.com/spreadsheets/d/1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo/edit#gid=0
+         https://docs.google.com/spreadsheets/d/1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo/edit#gid=0
 
       Then the Spreadsheet ID is:
    
-      1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo
+         1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo
+      
+      ![Selection_006-3](https://user-images.githubusercontent.com/44729718/115287377-d1bad680-a115-11eb-8730-4c6ae00184a7.png)
+
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
    
