@@ -126,5 +126,4 @@ if (!flag){
 
 // a delay of several seconds is required before publishing again    
 delay(5000);
-
 }
