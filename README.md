@@ -27,11 +27,6 @@
       Then the Spreadsheet ID is:
    
       1sqp9hIM5VvDGEf8i9H-W1Z72lm0O5-ZxC16sMMS-cgo
-      
-      ![Selection_006-2](https://user-images.githubusercontent.com/44729718/115286788-17c36a80-a115-11eb-9bce-a611d61cba28.png)
-
-
-
 
 4. From the Google Sheets menu, go to `Tools > Script Editor`
    
