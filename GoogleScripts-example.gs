@@ -85,6 +85,5 @@ function doPost(e) {
   else{
     return ContentService.createTextOutput("Error! Request body empty or in incorrect format.");
   }
-    
 }
 
