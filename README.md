@@ -37,7 +37,7 @@
 
 5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
 
-6. Update the Spreadsheet ID (line 11) with the ID obtained in step 3, and click `Save`.
+6. Update the Spreadsheet ID (line 12) with the ID obtained in step 3, and click `Save`.
 
    *Note:  The Spreadsheet ID must be contained in single quotation marks as shown in the example code, and the script must then be saved before continuing to the next step.*
    
