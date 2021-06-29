@@ -51,13 +51,18 @@
    
    Click `Deploy` 
    
-8. Click `Authorize access`
+   *Note: If prompted for authorization or permissions, refer to step 10.*
+
+8. Copy and save the `Deployment ID` for use in the ESP8266 code, and click `Done`.
+
+9. From the script editor, click `Save` and then `Run`. 
+
+   *Note: if you have already reviewed permissions in step 7, nothing will happen when you click run but you must do that once before continuing*
+ 
+10. If prompted for authorizaiton, select `Review permissions` or `Authorize access`. 
 
    - select your Google account
    - on the "Google hasn't verified this app" screen, select `Advanced` > `Go to Untitled project (unsafe)` > `Allow`
-   - copy and save the Deployment ID for use in the ESP8266 code, and click `Done`.
-
-9. From the script editor, click `Run` *(note that nothing will happen if everything has been set up successfully, but it is necessary to run this function manually just one time).* 
 
    
 
