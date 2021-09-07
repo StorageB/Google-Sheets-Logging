@@ -67,7 +67,7 @@
 
 ### Instructions for ESP8266
 
-1. In the Arduino IDE, paste the ESP8266-example.cpp code into a blank sketch. Overwrite any existing code that was there.
+1. In the Arduino IDE, paste the "ESP8266-example.cpp" code into a blank sketch. Overwrite any existing code that was there.
 
 2. Update the following info:
 
