@@ -90,4 +90,5 @@
 ### Additional Notes
 
 1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
+2. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
 
