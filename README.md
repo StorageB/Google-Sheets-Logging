@@ -2,7 +2,7 @@
 
 ###### Below are step by step instructions to begin logging data using an ESP8266 module without the need for a third party service. This will publish random number values, so no additional hardware or sensors are required for the script to run. These instructions assume you are familiar with the Arduino IDE and how to upload code to your ESP8266 and install libraries.
 
-#### Instructions for Google Sheets
+### Instructions for Google Sheets
 
 1. Create new Google Sheets document, and give it a name.
 
@@ -65,7 +65,7 @@
 
    
 
-#### Instructions for ESP8266
+### Instructions for ESP8266
 
 1. In the Arduino IDE, paste the ESP8266-example.cpp code into a blank sketch. Overwrite any existing code that was there.
 
@@ -87,6 +87,7 @@
 
      
 
-#### Additional Notes
+### Additional Notes
 
 1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
+
