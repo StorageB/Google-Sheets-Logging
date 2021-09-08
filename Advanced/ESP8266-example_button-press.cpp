@@ -96,9 +96,9 @@ void setup() {
 void loop() {
 
   // attempt to publish to Google Sheets when button is pressed (when pin reads HIGH)
-  if (digitalRead(D1)== HIGH)  {
+  if (digitalRead(D1) == HIGH)  {
 
-    // before attempting to publish to Google Sheets, set the data_published variable to false
+    // before attempting to publish to Google Sheets, set the data_published variable to false and error_count to 0
     data_published = false;
     error_count = 0;
     
@@ -107,7 +107,7 @@ void loop() {
     value1 = random(0,1000);
     value2 = random(0,100000);
 
-    // this while loop will attempt to publish data up to 3 times
+    // the while loop will attempt to publish data up to 3 times
     while(data_published == false && error_count < 3){
 
       static bool flag = false;
