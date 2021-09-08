@@ -1,6 +1,6 @@
 # Advanced Examples
 
-###### This folder contains alternative examples for logging data to Google Sheets. This assusems you have followed the instructions for the main tutorial and can succussfully send data to Google Sheets.
+###### This folder contains alternative examples for logging data to Google Sheets. This assusems you have followed the instructions for the main tutorial and are able to succussfully send data to Google Sheets.
 
 ### Log data on button press
 
@@ -10,14 +10,14 @@ This example will log data to Google Sheets when a button is pressed.
 
    Example wiring diagram:    https://www.arduino.cc/en/Tutorial/BuiltInExamples/Button
   
-2. Follow the instructions for the main tutorial, but use the code from the "ESP8266-example_button-press.cpp" example instead.
+2. Follow the instructions for the main tutorial, but use the code from the "ESP8266-example_button-press.cpp" file for the ESP8266 instead.
 3. Data will be published to Google Sheets when the button is pressed.
 
-*Code explanation:*
+*Notes:*
 
-If data is not being sent to Google Sheets on a regular interval but rather on an event trigger (such as only publishing data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, it is required to try again if the first attempt fails. 
+If data is not being sent to Google Sheets on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the example code is set up to automatically try again. I have found that data gets sent on the second attempt (although the code will attempt up to 3 times) unless something else is wrong such as Google servers temporarily down, etc. 
 
-When the button is pressed (pin D1 reads high), the data_published variable is set to false, and the error_count variable is set to zero. An attempt is then made to publish data to Google Sheets inside of the while loop. If successful, data_published is set to true and it exits the while loop. If sending data fails, data_published remains false and error_count is increased by 1, then it waits a couple seconds and a second attempt to publish is made. It will attempt to publish up to 3 times (while data_published is false and error_count is less than 3). However, I have found that it always works on the second attempt (unless there is something else wrong such as WiFi/router issues, Google servers temporarily down, etc).
+In the example code when the button is pressed (pin D1 reads high), an attempt to send data is made. If it fails, it will wait a couple seconds and try again. The data_published and error_count variables keep track whether or not data has been send successfully to Google Sheets, and are reset each time the button is pressed.
   
 
 ### Send data from Goole Sheets to the ESP8266
