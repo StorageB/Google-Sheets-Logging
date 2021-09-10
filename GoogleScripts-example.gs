@@ -80,7 +80,7 @@ function doPost(e) {
     return ContentService.createTextOutput(str);
   } // endif (parsedData !== undefined)
   
-  else{
+  else {
     return ContentService.createTextOutput("Error! Request body empty or in incorrect format.");
   }
 }
