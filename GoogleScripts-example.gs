@@ -3,9 +3,6 @@
 // https://github.com/StorageB/Google-Sheets-Logging
 // reddit: u/StorageB107
 // email: StorageUnitB@gmail.com
-//
-// This example uses the HTTPSRedirect library by Sujay Phadke
-// https://github.com/electronicsguy/ESP8266
 
 
 // Enter Spreadsheet ID here
