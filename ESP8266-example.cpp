@@ -3,9 +3,6 @@
 // https://github.com/StorageB/Google-Sheets-Logging
 // reddit: u/StorageB107
 // email: StorageUnitB@gmail.com
-//
-// This example uses the HTTPSRedirect library by Sujay Phadke
-// https://github.com/electronicsguy/ESP8266
 
 
 #include <Arduino.h>
@@ -88,14 +85,14 @@ void setup() {
 
 void loop() {
 
-// create some fake data to publish
-value0 ++;
-value1 = random(0,1000);
-value2 = random(0,100000);
+  // create some fake data to publish
+  value0 ++;
+  value1 = random(0,1000);
+  value2 = random(0,100000);
 
 
-static bool flag = false;
-if (!flag){
+  static bool flag = false;
+  if (!flag){
     client = new HTTPSRedirect(httpsPort);
     client->setInsecure();
     flag = true;
@@ -125,6 +122,6 @@ if (!flag){
     Serial.println("Error while connecting");
   }
 
-// a delay of several seconds is required before publishing again    
-delay(5000);
+  // a delay of several seconds is required before publishing again    
+  delay(5000);
 }
