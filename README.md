@@ -1,6 +1,6 @@
 # Log data from an ESP8266 to Google Sheets
 
-###### Below are step by step instructions to begin logging data using an ESP8266 module without the need for a third party service. This will publish random number values, so no additional hardware or sensors are required for the script to run. These instructions assume you are familiar with the Arduino IDE and how to upload code to your ESP8266 and install libraries.
+###### Below are step by step instructions to begin logging data using an ESP8266 module without the need for a third party service. This will publish random number values, so no additional hardware or sensors are required for the script to run. These instructions assume you are familiar with the Arduino IDE, have it set up to program an ESP8266 module, and know how to install libraries.
 
 ### Instructions for Google Sheets
 
@@ -79,16 +79,17 @@
 
 3. Install the HTTPSRedirect library from here:
 
-    https://github.com/electronicsguy/ESP8266
+    https://github.com/electronicsguy/HTTPSRedirect
 
-    (download and save the HTTPSRedirect folder in your library directory)
+    (click on the green "code" button and "Download ZIP", then unzip the file and move the HTTPSRedirect folder to your library directory)
 
 4. Upload code to your ESP8266 module and watch data get published to your sheet!
 
      
 
-### Additional Notes
+### Troubleshooting and Additional Notes
 
-1. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
-2. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
+1. If you get an "Error compiling for board..." related to the HTTPSRedirect library and the GScriptID, host, password, and ssid definitions, go the the HTTPSRedirect library folder and delete the "config.cpp" file. Note that the network ID, password, host, and Google Script Deployment ID are defined in the main ESP8266 example code and therefore this file is not required and may cause errors for some compilers. 
+2. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
+3. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
 
