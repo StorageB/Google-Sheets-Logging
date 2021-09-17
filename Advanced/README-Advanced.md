@@ -18,6 +18,6 @@ This example will log data to Google Sheets when a button is pressed.
 If data is not being sent to Google Sheets on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail due to an issue with the way Google Sheets handles the request. The data is sent if a second attempt is made shortly after the first. Therefore, the example code is set up to automatically try again if the first attempt fails. 
 
 
-### Send data from Goole Sheets to the ESP8266
+### Send data from Google Sheets to the ESP8266
 
 (example code coming soon)
