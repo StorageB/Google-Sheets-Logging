@@ -82,8 +82,8 @@
     https://github.com/electronicsguy/HTTPSRedirect
 
     - Click on the green "code" button and "Download ZIP"
-    - Unzip the file and move the HTTPSRedirect folder to your library directory (For the Arduino IDE, the library directory is a subfolder named "libraries" at the path shown under File > Preferences > Sketchbook location. Create the libraries folder (note: do not capitalize the L) if it does not already exist)
-    - IMPORTANT: delete the config.cpp file from the HTTPSRedirect folder as this may cause errors when compiling the sketch.
+    - Unzip the file and move the HTTPSRedirect folder to your library directory (For Arduino IDE 2.0 and above, the library directory is a subfolder named "libraries" at the path shown under File > Preferences > Sketchbook location. Create the libraries folder (note: do not capitalize the L) if it does not already exist)
+    - **IMPORTANT**: delete the config.cpp file from the HTTPSRedirect folder as this may cause errors when compiling the sketch (it must be deleted, not just renamed).
 
 4. Upload code to your ESP8266 module and watch data get published to your sheet!
 
@@ -91,7 +91,7 @@
 
 ## Troubleshooting and Additional Notes
 
-1. If you get an error compiling for board, go the the HTTPSRedirect library folder and delete the "config.cpp" file. Note that the network ID, password, host, and Google Script Deployment ID are defined in the main ESP8266 example code and therefore this file is not required and may cause errors for some compilers. 
+1. If you get an error when compiling, go to the HTTPSRedirect library folder and delete the "config.cpp" file. Note that the network ID, password, host, and Google Script Deployment ID are defined in the main ESP8266 example code and therefore this file is not required and may cause errors for some compilers. 
 2. When making changes to the Google Scripts code, you will need to click `Save` then `Deploy > New deployment` for any new changes to take effect. You will be given a new Deployment ID that you will have to update in the ESP8266 code each time (each new deployment is given a new Deployment ID).
 3. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
 4. This tutorial does not work for an ESP32 device.
