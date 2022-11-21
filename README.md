@@ -33,13 +33,11 @@
       ![Selection_006-3](https://user-images.githubusercontent.com/44729718/115287377-d1bad680-a115-11eb-8730-4c6ae00184a7.png)
 
 
-4. From the Google Sheets menu, go to `Tools > Script Editor`
-   
-   *Note:  Make sure you are using the new Apps Script editor (not the legacy version). The editor will default to the new version, but if you're using the legacy version you'll need switch back by clicking the blue "Use new editor" button at the top of the page.*
+4. From the Google Sheets menu, go to `Extensions > Apps Script`
 
 5. Delete all of the default text in the script editor, and paste the GoogleScripts-example.gs code.
 
-6. Update the Spreadsheet ID (line 12) with the ID obtained in step 3, and click `Save`.
+6. Update the Spreadsheet ID (line 9) with the ID obtained in step 3, and click `Save`.
 
    *Note:  The Spreadsheet ID must be contained in single quotation marks as shown in the example code, and **the script must be saved before continuing** to the next step.*
    
