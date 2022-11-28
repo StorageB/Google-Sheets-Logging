@@ -82,10 +82,15 @@
     https://github.com/electronicsguy/HTTPSRedirect
 
     - Click on the green "code" button and "Download ZIP"
-    - Unzip the file and move the HTTPSRedirect folder to your library directory (For Arduino IDE 2.0 and above, the library directory is a subfolder named "libraries" at the path shown under File > Preferences > Sketchbook location. Create the libraries folder (note: do not capitalize the L) if it does not already exist)
-    - **IMPORTANT**: delete the config.cpp file from the HTTPSRedirect folder as this may cause errors when compiling the sketch (it must be deleted, not just renamed).
+    - Unzip the file and move the HTTPSRedirect folder to your library directory
+      
+      *Note: For Arduino IDE 2.0 and above, the library directory is a subfolder named "libraries" at the path shown under File > Preferences > Sketchbook location. Create the "libraries" folder if it does not already exist (do not capitalize the L in the "libraries" folder name)*
+    
+4. Delete the config.cpp file from the HTTPSRedirect folder.
 
-4. Upload code to your ESP8266 module and watch data get published to your sheet!
+   *Note: It must be deleted, not just renamed as it may cause errors when compiling the sketch.*
+
+5. Upload code to your ESP8266 module and watch data get published to your sheet!
 
      
 
