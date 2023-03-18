@@ -101,3 +101,6 @@
 3. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
 4. This tutorial does not work for an ESP32 device.
 
+
+
+<a href="https://www.buymeacoffee.com/StorageB" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
