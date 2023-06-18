@@ -1,7 +1,7 @@
 // Example Arduino/ESP8266 code to upload data to Google Sheets
 // Follow setup instructions found here:
 // https://github.com/StorageB/Google-Sheets-Logging
-// reddit: u/StorageB107
+// 
 // email: StorageUnitB@gmail.com
 
 
