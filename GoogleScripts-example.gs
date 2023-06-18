@@ -1,7 +1,7 @@
 // Example Google Scrips code to upload data to Google Sheets from Arduino/ESP8266
 // Follow setup instructions found here:
 // https://github.com/StorageB/Google-Sheets-Logging
-// reddit: u/StorageB107
+// 
 // email: StorageUnitB@gmail.com
 
 
