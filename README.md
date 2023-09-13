@@ -39,8 +39,6 @@
 
 6. Update the Spreadsheet ID (line 9) with the ID obtained in step 3, and click `Save`.
 
-   ![Screenshot from 2023-09-13 13-31-04](https://github.com/StorageB/Google-Sheets-Logging/assets/44729718/2eea772b-f607-4ccc-8dbd-ea317255227d)
-
    *Note:  The Spreadsheet ID must be contained in single quotation marks as shown in the example code, and **the script must be saved before continuing** to the next step.*
    
 8. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
