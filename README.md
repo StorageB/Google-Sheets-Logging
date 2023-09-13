@@ -39,9 +39,11 @@
 
 6. Update the Spreadsheet ID (line 9) with the ID obtained in step 3, and click `Save`.
 
+   ![Screenshot from 2023-09-13 13-31-04](https://github.com/StorageB/Google-Sheets-Logging/assets/44729718/2eea772b-f607-4ccc-8dbd-ea317255227d)
+
    *Note:  The Spreadsheet ID must be contained in single quotation marks as shown in the example code, and **the script must be saved before continuing** to the next step.*
    
-7. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
+8. Click the blue `Deploy` button at the top right of the page, and select `New Deployment`. 
  
    Click the `gear` icon next to Select Type, and select  `Web App` and modify the following:
 
@@ -51,13 +53,13 @@
    
    Click `Deploy` 
    
-8. Click `Authorize access` then select your Google account.
+9. Click `Authorize access` then select your Google account.
    
    On the "Google hasn't verified this app" screen, select `Advanced` > `Go to Untitled project (unsafe)` > `Allow`
 
    Copy and save the `Deployment ID` for use in the ESP8266 code, and click `Done`.
 
-9. From the script editor, click `Save` and then `Run`. 
+10. From the script editor, click `Save` and then `Run`. 
 
    *Note:  Nothing will happen when you click run but you must do that once before continuing.*
  
