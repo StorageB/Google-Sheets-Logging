@@ -1,6 +1,6 @@
 # Log data from an ESP8266 to Google Sheets
 
-Below are step by step instructions to begin logging data using an ESP8266 module without the need for a third party service. This will publish random number values, so no additional hardware or sensors are required for the script to run. The HTTPSRedirect library is used to publish the data. More information on that library can be found here: https://github.com/electronicsguy/HTTPSRedirect
+Below are step by step instructions to begin logging data using an ESP8266 module without the need for a third party service. This will publish random number values, so no additional hardware or sensors are required for the script to run. 
 
 <br>
 
