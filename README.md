@@ -101,10 +101,11 @@ When making changes to the Google Scripts code, you will need to click `Save` th
 
 ## Troubleshooting
 
-1. If you get an error when compiling, go to the HTTPSRedirect library folder and verify that you have deleted the "config.cpp" file. Note that the network ID, password, host, and Google Script Deployment ID are defined in the main ESP8266 example code and therefore this file is not required and may cause errors for some compilers. 
-2. If you are unable to get this working for your existing project, it is recommended that you start with a brand new empty project and spreadsheet and then follow the above instructions. Once you have the example above working, then make the changes to implement your own custom code.
-3. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
-4. This tutorial does not work for an ESP32 device.
+1. If you get a "Something went wrong. Please try again." error message from Google during step 9 when trying to authorize access, try using the Google Chorme browser for this step. I have found that Google has blocked access from some other browsers.
+2. If you get an error when compiling, go to the HTTPSRedirect library folder and verify that you have deleted the "config.cpp" file. Note that the network ID, password, host, and Google Script Deployment ID are defined in the main ESP8266 example code and therefore this file is not required and may cause errors for some compilers. 
+3. If you are unable to get this working for your existing project, it is recommended that you start with a brand new empty project and spreadsheet and then follow the above instructions. Once you have the example above working, then make the changes to implement your own custom code.
+4. For applications where data is not sent on a regular interval but rather on an event trigger (such as only sending data when a button is pressed), occasionally the first attempt to send data will fail. Therefore, the code must be modified to send the data again if the first attempt fails. See the example under the "Advanced" folder for additional information.
+5. This tutorial does not work for an ESP32 device.
 
 
 #### I hope you found this tutorial helpful!
