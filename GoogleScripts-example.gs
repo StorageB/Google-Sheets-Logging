@@ -30,7 +30,8 @@ function doPost(e) {
     
     var sheet = SS.getSheetByName(parsedData.sheet_name); // sheet name to publish data to is specified in Arduino code
     var dataArr = parsedData.values.split(","); // creates an array of the values to publish 
-         
+
+    // Default time zone is America/Chicago. Update time zone below with appropriate ID from here: https://developers.google.com/google-ads/api/data/codes-formats#timezone-ids
     var date_now = Utilities.formatDate(new Date(), "America/Chicago", "yyyy/MM/dd"); // gets the current date
     var time_now = Utilities.formatDate(new Date(), "America/Chicago", "hh:mm:ss a"); // gets the current time
     
