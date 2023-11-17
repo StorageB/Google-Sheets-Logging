@@ -31,8 +31,8 @@ function doPost(e) {
     var sheet = SS.getSheetByName(parsedData.sheet_name); // sheet name to publish data to is specified in Arduino code
     var dataArr = parsedData.values.split(","); // creates an array of the values to publish 
          
-    var date_now = Utilities.formatDate(new Date(), "CST", "yyyy/MM/dd"); // gets the current date
-    var time_now = Utilities.formatDate(new Date(), "CST", "hh:mm:ss a"); // gets the current time
+    var date_now = Utilities.formatDate(new Date(), "America/Chicago", "yyyy/MM/dd"); // gets the current date
+    var time_now = Utilities.formatDate(new Date(), "America/Chicago", "hh:mm:ss a"); // gets the current time
     
     var value0 = dataArr [0]; // value0 from Arduino code
     var value1 = dataArr [1]; // value1 from Arduino code
